@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <h1>Welcome to <%= node["company"] %>!</h1>
+    <h1>Hello, <%= node["fqdn"] %>!</h1>
+	<h2> Attributes in a separate file </h2>
+	<h3> This is <%= node["platform"]%>:<%= node["platform_version"]%> Machine.  </h3>
+    <p>
+      This server has <%= node["memory"]["total"].to_i / 1024 %> MB memory.
+    </p>
+	<p>  Version Number 0.3.8 </p>
+  </body>
+</html>
